@@ -1,5 +1,17 @@
+"""
+Implements a 2 layer perceptron to solve the XOR, a linearly inseperable problem.
+XOR truth table:
 
+        True   |  False
+        ______________
+True   | False | True |
+_____  |_______|______|
+False  | True  | False|
+       |_______|______|
+       
+"""
 
+import numpy as np
 
 # X = <X1, X2, 1 (bias)>
 x = np.array([[1,1,1],[1,0,1],[0,1,1],[0,0,1]])
